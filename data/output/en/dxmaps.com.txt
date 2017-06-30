@@ -1,0 +1,1 @@
+real w2l maps qso/swl time

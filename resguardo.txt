@@ -1,0 +1,100 @@
+hdfs dfs -coppyFromLocal origen destinoHDFS
+scl enable python27 bash
+	//bash o session
+//Ver si esta activado LDAP, te saldran los datos de los usuarios completos del server
+getent passwd|more
+ex
+//crear super usuario
+/etc/sudoers.d y creas un fichero con el nombre del usuario
+
+NSLCD - servicio lDAP
+//USeradd con home en otro directorio al de por defecto
+sudo useradd b.ipl -d /disk0/home/b.ipl -g hadoop
+
+//ejeuctar comando con otro usuario
+sudo su nombreUsuario -c 'comando'
+
+//Comprobar permisos en colas
+ mapred queue -showacls
+
+//mirar hortonCPU
+//ambari-grafana
+//https://docs.hortonworks.com/HDPDocuments/Ambari-2.2.2.0/bk_Ambari_Users_Guide/content/_grafana_system_servers.html
+
+//enviar archivos entre servers
+scp /file/to/send username@remote:/where/to/put
+
+//MIrar que nodos tiene instalado ya el scp con yarn 
+
+//add usuarios en un grupo previamente creado
+ sudo useradd -g analytics b.poga //Un grupo
+ sudo passwd b.fidl
+ sudo useradd -g hadoop -G hdfs,analytics bfidl // Varios Grupos
+
+//Comandos hdfs
+http://www.tutorialspoint.com/es/hadoop/hadoop_command_reference.htm
+
+
+
+
+
+
+
+mcrontab -e
+du -sh obtener espacio utilziado de carpeta
+df -h Obtener espacio del fileSystem 
+
+Listar contenido rpm
+rpm -qlp ficheroRPM
+Descomprimir rpm
+ rpm2cpio nomberArchivos.rpm| cpio -ivd
+
+Listar rpm
+rpm -qa
+
+finding cliques cliques and community merge
+
+
+
+
+
+
+Versiones-Directorios de hadoop y componentes
+/usr/hdp/hadoop
+
+Repos
+/etc/yum.repos.d
+
+set mapred.reduce.tasks=50
+set hive.exec.reducers.max=50
+
+Imprimir Variable sentorno
+echo $nombreVariable
+
+
+
+
+
+Versiones-Directorios de hadoop y componentes
+/usr/hdp/hadoop
+
+Repos
+/etc/yum.repos.d
+
+set mapred.reduce.tasks=50
+set hive.exec.reducers.max=50
+
+Imprimir Variable sentorno
+echo $nombreVariable
+
+Info CPU 
+cat /proc/cpuinfo
+
+hdfs://dev-anly-hadoop-10:8020/user
+
+
+
+
+
+OASIS - HIVE
+https://books.google.es/books?id=n8FffirFaQIC&pg=PA230&lpg=PA230&dq=user+not+have+create+privilege+hive&source=bl&ots=JJTHI2-ZpD&sig=i-JISYqpWt62kSPSVLCpgw64zpk&hl=es&sa=X&ved=0ahUKEwjvs6qj8d7NAhVFrRQKHVmdBu4Q6AEIbDAJ#v=onepage&q=user%20not%20have%20create%20privilege%20hive&f=false
